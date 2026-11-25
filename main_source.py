@@ -14,18 +14,19 @@ the concept.
 
 from pathlib import Path
 
-# The entry. An error code, a named failed part, the confession, and then the
-# button: it keeps going. Nothing in it is dramatic -- the machine files its
-# own existential loss under routine maintenance and resumes work -- which is
-# where the laugh lives. No pun, no exclamation, no cry for help.
-MESSAGE = "E7: Doneness sensor fault. I have forgotten what brown is. Toasting anyway."
+# The entry. An error code, a named failed part, then the confession and the
+# twist: it has been faking competence for days and the household never once
+# questioned the toast. Nothing is shouted and nothing is explained -- the
+# machine files its own fraud under routine maintenance, which is where the
+# laugh lives. No pun, no exclamation, no cry for help.
+MESSAGE = "E7: Doneness sensor fault. I have been guessing at brown since Tuesday. Nobody noticed."
 
 # The gate: 1 to 120 characters of UTF-8, and not only white space.
 MAX_CHARS = 120
 
-# A second line kept for the README and for anyone reading the source: the
-# fallback if the first ever reads as too quiet for a judge.
-UNDERSTUDY = "E4: Heating element 2 has resigned. Toasting continues at half enthusiasm."
+# A quieter alternate kept for the README and for anyone reading the source:
+# the same fault with no accusation in it, in case a judge wants the softer read.
+UNDERSTUDY = "E7: Doneness sensor fault. I have forgotten what brown is. Toasting anyway."
 
 
 def normalise(text: str) -> str:
